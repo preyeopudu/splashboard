@@ -18,7 +18,7 @@ const FormInput: React.FC<FormInputProps> = ({ placeholder, type }) => {
         {type === "password" && (
           <button
             onClick={() => setIsVisible(!isVisible)}
-            className="w-3/12 text-sm"
+            className="w-3/12 text-md "
             style={{ color: "#39CDCC" }}
           >
             {isVisible === true ? "hide" : "show"}
