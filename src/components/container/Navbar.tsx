@@ -7,7 +7,7 @@ import SearchBar from "../commons/SearchBar";
 
 const Navbar = () => {
   return (
-    <div className="w-full bg-white shadow-md h-1/6 py-4  px-4 lg:px-16 ">
+    <div className="w-full bg-white shadow-md md:h1/4 h-1/4 py-4   px-4 lg:px-16 ">
       <div className=" md:py-8 lg:items-center items-baseline justify-between flex flex-row ">
         <div className="md:hidden" onClick={() => alert(1)}>
           <HiMenu size={33} />

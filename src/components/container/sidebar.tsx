@@ -2,7 +2,7 @@ import React from "react";
 import CustomDropDown from "../commons/CustomDropdown";
 import logo from "../../assets/images/logo.svg";
 import { customersData, buisnessData, settingsData } from "../../utils/data";
-import TitleIcon from "../commons/TitleIcon";
+import NavLink from "../commons/Navlink";
 
 const SideBar: React.FC = () => {
   return (
@@ -17,7 +17,7 @@ const SideBar: React.FC = () => {
       </div>
 
       <div className="mb-2">
-        <TitleIcon
+        <NavLink
           name="dashboard"
           image={import("../../assets/images/icons/home.svg")}
         />
@@ -31,7 +31,7 @@ const SideBar: React.FC = () => {
           Customers
         </p>
         {customersData.map((item) => (
-          <TitleIcon name={item.name} image={item.image} />
+          <NavLink name={item.name} image={item.image} />
         ))}
 
         <p
@@ -41,7 +41,7 @@ const SideBar: React.FC = () => {
           buisnesses
         </p>
         {buisnessData.map((item) => (
-          <TitleIcon name={item.name} image={item.image} />
+          <NavLink name={item.name} image={item.image} />
         ))}
 
         <p
@@ -51,7 +51,7 @@ const SideBar: React.FC = () => {
           settings
         </p>
         {settingsData.map((item) => (
-          <TitleIcon name={item.name} image={item.image} />
+          <NavLink name={item.name} image={item.image} />
         ))}
       </div>
     </div>

@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
 
-interface TitleIconProps {
+interface NavLinkProps {
   name: string;
   image: Promise<typeof import("*.svg")>;
 }
 
-const TitleIcon: React.FC<TitleIconProps> = ({ name, image }) => {
+const NavLink: React.FC<NavLinkProps> = ({ name, image }) => {
   const [imageSrc, setImageSrc] = useState<string | null>(null);
 
   useEffect(() => {
@@ -36,4 +36,4 @@ const TitleIcon: React.FC<TitleIconProps> = ({ name, image }) => {
   );
 };
 
-export default TitleIcon;
+export default NavLink;
