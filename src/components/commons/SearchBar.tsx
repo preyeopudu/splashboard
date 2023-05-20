@@ -13,7 +13,7 @@ const SearchBar: React.FC<SearchBarProps> = ({ className }) => {
         placeholder="Search for anything"
       />
       <button
-        className="w-3/12 p-4 rounder-r-md  justify-center flex flex-1"
+        className="w-3/12  py-3 px-3 rounder-r-md  justify-center flex flex-1"
         style={{
           backgroundColor: "rgba(57, 205, 204, 1)",
           height: "100%",

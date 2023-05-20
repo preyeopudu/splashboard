@@ -5,7 +5,7 @@ import HomePage from "./components/pages/HomePage";
 
 function App() {
   return (
-    <div>
+    <div className="h-full">
       <Routes>
         <Route element={<LoginPage />} path="/*" />
         <Route element={<HomePage />} path="/home" />

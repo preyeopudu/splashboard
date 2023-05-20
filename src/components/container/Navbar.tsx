@@ -1,27 +1,21 @@
-import logo from "../../assets/images/logo.svg";
 import pic from "../../assets/images/pic.jpg";
 import { Link } from "react-router-dom";
 import { RxBell } from "react-icons/rx";
-import { AiOutlineSearch } from "react-icons/ai";
 import { HiMenu } from "react-icons/hi";
 import CustomDropDown from "../commons/CustomDropdown";
 import SearchBar from "../commons/SearchBar";
 
 const Navbar = () => {
   return (
-    <div className="w-full bg-white py-4  px-4 lg:px-16 ">
+    <div className="w-full bg-white shadow-md h-1/6 py-4  px-4 lg:px-16 ">
       <div className=" md:py-8 lg:items-center items-baseline justify-between flex flex-row ">
-        <div className="lg:hidden" onClick={() => alert(1)}>
+        <div className="md:hidden" onClick={() => alert(1)}>
           <HiMenu size={33} />
         </div>
         <div
           className="md:flex-row flex-3/2  justify-center flex md:items-center md:justify-between 
       "
         >
-          <img
-            src={logo}
-            className="h-5 md:h-8 mr-4 lg:mr-36 my-3 md:py-0 flex flex-1/2"
-          />
           <div className="hidden md:flex">
             <SearchBar />
           </div>

@@ -1,6 +1,10 @@
 import React, { useState } from "react";
-import { AiOutlineCaretDown } from "react-icons/ai";
-const CustomDropDown = () => {
+import { BsChevronDown } from "react-icons/bs";
+
+interface CustomDropDownProps {
+  title?: string;
+}
+const CustomDropDown: React.FC<CustomDropDownProps> = ({ title }) => {
   const [selectedOption, setSelectedOption] = useState(null);
   const [isExpanded, setIsExpanded] = useState(false);
 
@@ -12,9 +16,9 @@ const CustomDropDown = () => {
   return (
     <div>
       <div className="flex-row flex items-center ">
-        <span style={{ marginRight: 10 }}>Opudu</span>
+        <span style={{ marginRight: 10 }}>{title}</span>
 
-        <AiOutlineCaretDown />
+        <BsChevronDown />
       </div>
     </div>
   );
