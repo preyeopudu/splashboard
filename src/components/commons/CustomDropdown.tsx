@@ -1,13 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import { BsChevronDown } from "react-icons/bs";
 
 interface CustomDropDownProps {
   title?: string;
 }
 const CustomDropDown: React.FC<CustomDropDownProps> = ({ title }) => {
-  const [selectedOption, setSelectedOption] = useState(null);
-  const [isExpanded, setIsExpanded] = useState(false);
-
   //   const handleOptionClick = (option) => {
   //     setSelectedOption(option);
   //     setIsExpanded(false);

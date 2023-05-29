@@ -11,15 +11,15 @@ const LoginPage = () => {
         <img src={logo} alt="Logo" className="h-8" />
       </div>
       <div className="flex flex-col lg:flex-row  bg-white flex-1 w-full">
-        <div className=" hidden sm:flex w-full h-full md:w-full">
+        <div className=" hidden sm:flex w-full h-full bg-white md:w-full">
           <img
             alt="sign up"
             className="h-500 w-full object-contain"
             src={login}
           />
         </div>
-        <div className="w-full  shadow-xl h-full sm:w-full flex items-center justify-center">
-          <div className="h-500 w-9/12 h-96 ">
+        <div className="w-full  shadow-xl h-full   flex items-center justify-center">
+          <div className="h-500 w-9/12">
             <h1
               className="text-some-blue text-2xl md:text-3xl lg:text-5xl"
               style={{ fontWeight: 700 }}

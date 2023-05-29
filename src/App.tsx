@@ -5,12 +5,10 @@ import HomePage from "./components/pages/HomePage";
 
 function App() {
   return (
-    <div className="h-full">
-      <Routes>
-        <Route element={<LoginPage />} path="/*" />
-        <Route element={<HomePage />} path="/home" />
-      </Routes>
-    </div>
+    <Routes>
+      <Route element={<LoginPage />} path="/" />
+      <Route element={<HomePage />} path="/home/*" />
+    </Routes>
   );
 }
 

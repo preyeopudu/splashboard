@@ -5,11 +5,11 @@ import { HiMenu } from "react-icons/hi";
 import CustomDropDown from "../commons/CustomDropdown";
 import SearchBar from "../commons/SearchBar";
 
-const Navbar = () => {
+const Navbar = ({ setToggleSideBar }) => {
   return (
     <div className="w-full bg-white shadow-md md:h1/4 h-1/4 py-4   px-4 lg:px-16 ">
       <div className=" md:py-8 lg:items-center items-baseline justify-between flex flex-row ">
-        <div className="md:hidden" onClick={() => alert(1)}>
+        <div className="md:hidden" onClick={() => setToggleSideBar(true)}>
           <HiMenu size={33} />
         </div>
         <div
@@ -20,7 +20,7 @@ const Navbar = () => {
             <SearchBar />
           </div>
         </div>
-        <div className="lg:flex flex-row items-center justify-between gap-3 ml-2 lg:gap-6 hidden">
+        <div className="md:flex flex-row items-center justify-between gap-3 ml-2 lg:gap-6 hidden">
           <Link to="/">
             <p className="underline ">Docs</p>
           </Link>

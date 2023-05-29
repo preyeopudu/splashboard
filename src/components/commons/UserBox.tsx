@@ -3,9 +3,9 @@ import React from "react";
 interface UserBoxProps {
   title: string;
   image: string;
-  number: string;
+  amount: number;
 }
-const UserBox: React.FC<UserBoxProps> = ({ title, number, image }) => {
+const UserBox: React.FC<UserBoxProps> = ({ title, image, amount }) => {
   return (
     <div className="  shadow h-40 bg-white rounded-md col-span-1 p-6 justify-center flex flex-col">
       <div className="">
@@ -16,7 +16,7 @@ const UserBox: React.FC<UserBoxProps> = ({ title, number, image }) => {
         >
           {title}
         </p>
-        <p>2,453</p>
+        <p>{amount}</p>
       </div>
     </div>
   );

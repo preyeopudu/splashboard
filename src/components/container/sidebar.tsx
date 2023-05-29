@@ -6,7 +6,7 @@ import NavLink from "../commons/Navlink";
 
 const SideBar: React.FC = () => {
   return (
-    <div className="relative bg-white shadow-sm pb-10 hidden md:block p-10 h-full ">
+    <div className="h-screen bg-white  shadow-sm pb-10  p-10">
       <img
         src={logo}
         className="h-5 md:h-8 mb-24 mr-4 lg:mr-36 my-3 md:py-0 flex flex-1/2"
