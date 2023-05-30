@@ -1,6 +1,6 @@
 import Navbar from "../container/Navbar";
 import Users from "../container/Users";
-import { Link, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import SideBar from "../container/sidebar";
 import UserDetailsPage from "../container/UserDetails";
 import { useState } from "react";

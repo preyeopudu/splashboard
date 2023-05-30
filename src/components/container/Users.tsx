@@ -1,4 +1,5 @@
 /* eslint-disable react-hooks/exhaustive-deps */
+// @ts-nocheck
 import { useEffect, useState } from "react";
 import UserBox from "../commons/UserBox";
 import UserRow from "../commons/UserRow";

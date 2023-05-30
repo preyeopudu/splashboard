@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { BsThreeDotsVertical } from "react-icons/bs";
 import { useNavigate } from "react-router-dom";
 

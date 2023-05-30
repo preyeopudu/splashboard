@@ -1,9 +1,6 @@
-import { useNavigate } from "react-router";
 import { BsArrowLeft } from "react-icons/bs";
 
 const UserDetailsPage = () => {
-  const navigate = useNavigate();
-
   return (
     <div className="h-full p-10">
       <div className="flex flex-col items-start">
