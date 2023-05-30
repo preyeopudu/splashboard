@@ -9,9 +9,9 @@ const HomePage = () => {
   const [toggleSideBar, setToggleSideBar] = useState(false);
   return (
     <div className="  h-screen max-h-screen bg-black flex flex-row">
-      <div className="max-h-screen h-screen  hidden md:block">
+      {/* <div className="max-h-screen h-screen  hidden md:block">
         <SideBar />
-      </div>
+      </div> */}
 
       {/* Toggle sidebar div */}
       <div
